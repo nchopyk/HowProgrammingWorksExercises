@@ -1,3 +1,4 @@
-const createUser = (name, city) => ({name, city});
+'use strict';
+const createUser = (name, city) => ({ name, city });
 
-console.log(createUser("Nazar", "Kyiv"))
+console.log(createUser('Nazar', 'Kyiv'));

@@ -1,12 +1,14 @@
-const getAges = persons => {
+'use strict';
+
+const getAges = (persons) => {
     const ages = {};
     for (const person in persons) {
         if (persons.hasOwnProperty(person)) {
-            ages[person] = persons[person].died - persons[person].born
+            ages[person] = persons[person].died - persons[person].born;
         }
     }
-    return ages
-}
+    return ages;
+};
 
 const persons = {
     lenin: { born: 1870, died: 1924 },

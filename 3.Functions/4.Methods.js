@@ -1,24 +1,26 @@
-const methods = iface => {
+'use strict';
+
+const methods = (iface) => {
     const result = [];
     for (const name in iface) {
         const fn = iface[name];
         if (typeof fn === 'function') {
-            result.push([name, name.length])
+            result.push([name, name.length]);
         }
     }
-    return result
-}
+    return result;
+};
 
 
 const exampleIface = {
-    m1: x => [x],
-    m2: function (x, y) {
+    m1: (x) => [x],
+    m2(x, y) {
         return [x, y];
     },
     m3(x, y, z) {
         return [x, y, z];
     }
-}
+};
 
-const funcResult = methods(exampleIface)
-console.log(funcResult)
+const funcResult = methods(exampleIface);
+console.log(funcResult);

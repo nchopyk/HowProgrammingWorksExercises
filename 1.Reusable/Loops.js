@@ -1,3 +1,5 @@
+'use strict';
+
 function range(start, end) {
     const resultList = [];
     for (let i = start; i <= end; i++) {

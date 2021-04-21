@@ -1,3 +1,5 @@
+'use strict';
+
 const hash = () => {
     const data = {};
     let counter = 0;

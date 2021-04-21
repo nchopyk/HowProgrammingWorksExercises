@@ -1,5 +1,7 @@
-const max = matrix => {
-    let max=matrix[0][0];
+'use strict';
+
+const max = (matrix) => {
+    let max = matrix[0][0];
     for (const row of matrix) {
         for (const el of row) {
             if (el > max) max = el;

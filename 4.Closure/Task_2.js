@@ -1,9 +1,11 @@
+'use strict';
+
 const array = () => {
     const data = [];
     const get = (index) => data[index];
     get.push = (element) => data.push(element);
     get.pop = () => data.pop();
-    return get
+    return get;
 };
 
 //Usage

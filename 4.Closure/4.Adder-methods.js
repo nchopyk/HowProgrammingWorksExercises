@@ -1,3 +1,5 @@
+'use strict';
+
 const adder = (a) => ({
     value() {
         return a;

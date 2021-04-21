@@ -1,4 +1,6 @@
-const store = value => () => value;
+'use strict';
+
+const store = (value) => () => value;
 
 const read = store(5);
 const value = read();
