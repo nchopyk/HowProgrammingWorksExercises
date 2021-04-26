@@ -1,20 +1,22 @@
+'use strict';
+
 function topSalary(salaries) {
     let max = 0;
     let maxName = null;
 
-    for (let [name, salary] of Object.entries(salaries)) {
+    for (const [name, salary] of Object.entries(salaries)) {
         if (salary > max) {
             max = salary;
-            maxName = name
+            maxName = name;
         }
     }
-    return maxName
+    return maxName;
 }
 
-let salaries = {
-    "John": 100,
-    "Pete": 300,
-    "Mary": 250
+const salaries = {
+    'John': 100,
+    'Pete': 300,
+    'Mary': 250
 };
 
-console.log(topSalary(salaries))
+console.log(topSalary(salaries));
